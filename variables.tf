@@ -8,13 +8,12 @@ variable "name" {
 
 variable "environment" {
   type        = string
-  default     = ""
   description = "Environment (e.g. `prod`, `dev`, `staging`)."
 }
 
 variable "repository" {
   type        = string
-  default     = "https://github.com/clouddrove/terraform-aws-labels"
+  default     = "https://github.com/Hero-payments/infra"
   description = "Terraform current module repo"
 }
 
@@ -38,8 +37,8 @@ variable "extra_tags" {
 
 variable "managedby" {
   type        = string
-  default     = "hello@clouddrove.com"
-  description = "ManagedBy, eg 'CloudDrove'."
+  default     = "Platform"
+  description = "ManagedBy, eg 'Issuing'."
 }
 
 variable "enabled" {
