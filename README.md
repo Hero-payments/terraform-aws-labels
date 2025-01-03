@@ -18,10 +18,10 @@ This module includes Terraform open source, examples, and automation tests (for 
 
 This table contains both Prerequisites and Providers:
 
-| Description   | Name                                       | Version   |
+| Description   | Name                                       |  Version  |
 |:-------------:|:-------------------------------------------:|:---------:|
-| **Prerequisite** | [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html) | >= 1.6.6 |
-| **Provider** | [aws](https://aws.amazon.com/) | >= 5.31.0 |
+| **Prerequisite** | [Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html) | >= 1.10.3 |
+| **Provider** | [aws](https://aws.amazon.com/) | >= 5.80.0 |
 
 
 
