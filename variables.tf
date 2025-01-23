@@ -41,6 +41,12 @@ variable "managedby" {
   description = "ManagedBy, eg 'Issuing'."
 }
 
+variable "product" {
+  type = string
+  default = "Hero"
+  description = "Product name, eg 'OSS'."
+}
+
 variable "enabled" {
   type        = bool
   description = "Set to false to prevent the module from creating any resources."

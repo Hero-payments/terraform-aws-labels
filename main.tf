@@ -23,6 +23,7 @@ locals {
   environment = var.enabled ? lower(format("%v", var.environment)) : ""
   managedby   = var.enabled ? lower(format("%v", var.managedby)) : ""
   repository  = var.enabled ? lower(format("%v", var.repository)) : ""
+  product     = var.enabled ? lower(format("%v", var.product)) : ""
   attributes  = var.enabled ? lower(format("%v", join(var.delimiter, compact(var.attributes)))) : ""
 
   tags_context = {
@@ -31,6 +32,7 @@ locals {
     environment = local.environment
     managedby   = local.managedby
     repository  = local.repository
+    product     = local.product
   }
 
   generated_tags = { for l in keys(local.tags_context) : title(l) => local.tags_context[l] if length(local.tags_context[l]) > 0 }
